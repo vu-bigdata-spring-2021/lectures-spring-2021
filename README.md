@@ -24,7 +24,7 @@ The goal of this class is to cover the concepts and recent progress made in the 
 - Data Processing: Cloud Computing and orchestrating big data workflows
 - Batch Computing Models: Map Reduce, Spark and RDD
 - Stream Processing Models: Spark streaming, Heron
-- Fault Tolerance: Zookeeper, Paxos, Consensus
+- Fault Tolerance and Consensus: Zookeeper, Paxos, Raft
 - Visualizing Big Data
 - Machine Learning for Big Data: SparkML
 - Projects
