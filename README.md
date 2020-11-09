@@ -26,7 +26,7 @@ The goal of this class is to cover the concepts and recent progress made in the 
 - Stream Processing Models: Spark streaming, Heron
 - Fault Tolerance and Consensus: Zookeeper, Paxos, Raft
 - Visualizing Big Data
-- Machine Learning for Big Data: SparkML
+- Machine Learning for Big Data: SparkML, Pandas, Dask
 - Projects
   - Transit Occupancy Analysis. See https://arxiv.org/abs/2008.02413 for motivation
   - Transit Energy Analysis and Optimization. See https://smarttransit.ai/files/aymantoit2020.pdf for motivation
