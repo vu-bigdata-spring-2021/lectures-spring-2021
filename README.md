@@ -28,9 +28,9 @@ The goal of this class is to cover the concepts and recent progress made in the 
 - Visualizing Big Data
 - Machine Learning for Big Data: SparkML
 - Projects
- - Transit Occupancy Analysis. See https://arxiv.org/abs/2008.02413 for motivation
- - Transit Energy Analysis and Optimization. See https://smarttransit.ai/files/aymantoit2020.pdf for motivation
- - Emergency Response Optimization. see https://arxiv.org/pdf/2010.07504.pdf and https://statresp.ai for motivation
+  - Transit Occupancy Analysis. See https://arxiv.org/abs/2008.02413 for motivation
+  - Transit Energy Analysis and Optimization. See https://smarttransit.ai/files/aymantoit2020.pdf for motivation
+  - Emergency Response Optimization. see https://arxiv.org/pdf/2010.07504.pdf and https://statresp.ai for motivation
 - Misc topics if time permits
    - Memcached
    - Dremel
