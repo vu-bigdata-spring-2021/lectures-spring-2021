@@ -1,4 +1,4 @@
-# Lectures - Topics in Big Data
+# Lectures - Topics in Big Data CS:4266/5266
 
 The goal of this class is to cover the concepts and recent progress made in the area of the Big Data. The focus will be on principles and practices of data storage, data modeling techniques, data processing and querying, data analytics and applications of machine learning using these systems. Throughout the class you will learn about the applications of these topics in real-world cases studies such as public transit systems and Emergency Response Systems. Visit the following sites and look at the dashboards to see an example of how we use these techniques for some of our projects.
 
