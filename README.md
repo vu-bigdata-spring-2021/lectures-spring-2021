@@ -1,6 +1,6 @@
 # Lectures - outline
 
-**This lecture outline is still a draft based on the last spring lecture. But you can look at the past outline here**
+**This lecture outline is still a draft based on the last spring lecture. But you can look at the past outline below**
 
 ## Spring 2020 
 
