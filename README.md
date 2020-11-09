@@ -1,118 +1,42 @@
-# Lectures - outline
+# Lectures - Topics in Big Data
 
-**This lecture outline is still a draft based on the last spring lecture. But you can look at the past outline below**
+The goal of this class is to cover the concepts and recent progress made in the area of the Big Data. The focus will be on principles and practices of data storage, data modeling techniques, data processing and querying, data analytics and applications of machine learning using these systems. Throughout the class you will learn about the applications of these topics in real-world cases studies such as public transit systems and Emergency Response Systems. Visit the following sites and look at the dashboards to see an example of how we use these techniques for some of our projects.
 
-## Spring 2020 
-
-# Table of Conents
-
-- [Topics in Big Data](#topics-in-big-data)
-  * [Introduction](#introduction)
-  * [Infrastructure](#infrastructure)
-    + [Examples](#examples)
-  * [Instructor](#instructor)
-    + [Teaching Assistant](#teaching-assistant)
-    + [Graders](#graders)
-  * [Course Expectation](#course-expectation)
-  * [Reading Material](#reading-material)
-  * [Topics to be covered](#topics-to-be-covered)
-  * [Exams, Quizzes, Assignments and projects](#exams--quizzes--assignments-and-projects)
-  * [No collaborations unless explicitly permitted.](#no-collaborations-unless-explicitly-permitted)
-  * [Evaluation](#evaluation)
-  * [Grading Criteria](#grading-criteria)
-  * [Course Policies](#course-policies)
-  * [Letter Grade Distribution](#letter-grade-distribution)
-  * [Disability Statement](#disability-statement)
-  * [Emergency Evacuation Plan](#emergency-evacuation-plan)
-
-
-# Topics in Big Data
-
-
-## Introduction
-
-The goal of this class is to cover topics in Big Data. The focus will be on principles and practices of data storage, data modeling techniques, data processing and querying, data analytics and applications of machine learning using these systems. We will learn about application of these concepts on large scale urban analytics in cities. To see an example where we really apply these techniques visit the following sites and take a look at the dashboards.
 
  * https://smarttransit.ai/
  * https://statresp.ai
- 
+ * https://github.com/smarttransit-ai/transit-occupancy-dashboard 
 
-## Infrastructure
+ # Expectations
 
-We will use google colab, AWS and github. Please see [infrastructure.md](infrastructure.md)
+ It is expected that the student taking this course is familiar with concepts like git, ssh and cloud computing. Also the primary programming language to be used in the course is python, which is one of the common languages used in data science and big data systems. Lastly, though we will use cloud computing resources for all assignments it is going to be important that you have a working computer with access to a terminal. As a starting point feel free to already install python 3.8 on your system. You can use anaconda if you are familiar it. But any other python3 environment will be okay. 
 
-## Instructor
+# Course Outline [Tentative]
 
-Abhishek Dubey `(first name . last name at vanderbilt.edu)`
-
-My research focus is on application of big data and machine learning for creating large scale social cyber-physical systems such as transportation networks. For more details visit my group project page. https://scope-lab-vu.github.io/
-
-**Contact** We will use brightspace for communication. You can also create issues on github to point to any specific problem with an example or assignment. 
-
-**Computation Resources** We will use AWS for computational resources. 
-
-**Office Hours** TBD
-
-I am also available by appointment as required. Send me an email if you need to meet with me outside the office hours.
-
-### Teaching Assistant 
-
-TBF
-### Graders
-
-- TBD
-
-## Course Expectation
-
-In the course we will be heavily using Python for programming excercises and analysis. We will also be using google collaboratory and Amazon Web Services. Knowledge of python is required. You are also expected to know how to use github and clone repositories.
-
-
-see the file [infrastructure.md](infrastructure.md)
-
-## Reading Material
-Most lectures I will assign reading material. You are expected to read it before the next class. The reading material will be available in the linked folder. See [01-introduction/reading](01-introduction/reading) for example.
-
-
-## Topics to be covered
-- [Applications of Big Data](https://vanderbilt365-my.sharepoint.com/:p:/g/personal/abhishek_dubey_vanderbilt_edu/EQS_UWKzCTpHlRhTARG76YYBYtKHV3v9-K1454_yYH7y1w?e=qWb0je)
-- [History of Database and Big Data Systems](02-history)
-- Big Data Infrastructure
-  - [Understanding IoT and Cloud Computing](02a-IoT): 
-  - [Understanding the database anatomy and optimizing access](03-anatomy_and_access)  
-  - [Concurrent Access and Online transactions: Paxos, Raft and Consensus](04_concurrentaccess) 
-  - [Understanding NoSQL: Big Table, MongoDB, Dynamo DB Column storage vs Row Storage](05_nosql) 
- - Computation Models and Big Data Processing (Batch Data) 
-   - Classical Workflow Systems (covered as an overview in class). See the [following paper](https://pegasus.isi.edu/wordpress/wp-content/papercite-data/pdf/deelman-fgcs-2015.pdf) for an example. [Here is another paper](https://www.isis.vanderbilt.edu/sites/default/files/WorkflowML.pdf) that provides a good formal definition of a workflow system.
-   - [Map Reduce and HDFS](06_mapreduce_and_spark)  
-   - [Spark and RDD](06_mapreduce_and_spark)  
-   - [Pulsar](07_pulsar_kafka_zookeeper) - Streaming Data Collection and Management (Pub/Sub systems)
-   - [Storm and Heron](08_streamprocessing)
-- Analytics
-  - [Machine Learning including clustering](09_machinelearning) - overview of machine learning
-  - [Link Analysis and Page Rank](06_mapreduce_and_spark/02-motivatingspark-PageRank.pptx)
- - Practical Applications
-   - [City Scooter Data Analysis](10_practicalApplications/BigDatainPractice.pdf)
-   - [City Accident Data Analysis](10_practicalApplications/BigDatainPractice.pdf)
-   - [Transit Energy systems](10_practicalApplications/BigDatainPractice.pdf)
- - [Time series Databases](11_timeseries_db)
- - Misc topics if time permits
+- Course Overview and a presentation on applications of big data in real-world. Big data overview paper
+- Data Sources: Overview of IoT Systems and the problem of velocity, variety and volume
+- Publish/Subscribe Paradigm: Kafka and Pulsar and MQTT
+- Data Storage: History of databases
+- SQL Database Anatomy: Transactions, Concurrent Access and Joins
+- Understanding NoSQL: Big Table, MongoDB, Dynamo DB
+- Understanding Graph Databases
+- Understanding Time Series Databases
+- Data Processing: Cloud Computing and orchestrating big data workflows
+- Batch Computing Models: Map Reduce, Spark and RDD
+- Stream Processing Models: Spark streaming, Heron
+- Fault Tolerance: Zookeeper, Paxos, Consensus
+- Visualizing Big Data
+- Machine Learning for Big Data: SparkML
+- Projects
+ - Transit Occupancy Analysis. See https://arxiv.org/abs/2008.02413 for motivation
+ - Transit Energy Analysis and Optimization. See https://smarttransit.ai/files/aymantoit2020.pdf for motivation
+ - Emergency Response Optimization. see https://arxiv.org/pdf/2010.07504.pdf and https://statresp.ai for motivation
+- Misc topics if time permits
    - Memcached
    - Dremel
    - SparkML
- - [Project ideas - not applicable for this semster](12_projectideas)
-  
- ## Exams, Quizzes, Assignments and projects
- 
-- 3 take home quizzes.
-- 5 programming assignments. 
-- Midterm
-- The final exam will be replaced by a final project and summary report to be presented and submitted by the end of the day of the final class.  
 
-## No collaborations unless explicitly permitted.
-
-The Vanderbilt Honor Code will govern work done. ANY VIOLATIONS WILL RESULT in the case to be reported to the honor council. You are welcome to refer to the online sources for your assignments. However, you must not copy the code and must provide citation of the source of inspiration. All work will be submitted via github.
-
-## Evaluation
+## Evaluation [Tentative]
 
 The following grading criteria are tentative and are
 subject to change. Each graded item in this course will be assigned a
@@ -121,7 +45,7 @@ number of points you achieved divided by the number of points possible.
 The instructor reserves the right to apply a curve to the final result.
 
 
-## Grading Criteria
+## Grading Criteria [Tentative]
 
 | Category        | Percentage  |
 | ------------- |:-------------:| 
