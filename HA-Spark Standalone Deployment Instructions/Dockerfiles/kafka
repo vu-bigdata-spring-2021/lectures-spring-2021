@@ -1,0 +1,7 @@
+# install kafka
+FROM zhuangweikang/bigdata-base:latest
+RUN wget https://downloads.apache.org/kafka/2.7.0/kafka_2.12-2.7.0.tgz
+RUN tar -xzvf kafka_2.12-2.7.0.tgz && rm -f kafka_2.12-2.7.0.tgz
+WORKDIR /opt/module/kafka_2.12-2.7.0/
+EXPOSE 9092
+CMD ["bash"]

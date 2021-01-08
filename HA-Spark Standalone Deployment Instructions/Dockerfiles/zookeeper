@@ -1,0 +1,7 @@
+FROM zhuangweikang/bigdata-base:latest
+RUN wget https://downloads.apache.org/zookeeper/zookeeper-3.6.2/apache-zookeeper-3.6.2-bin.tar.gz
+RUN tar -xzvf apache-zookeeper-3.6.2-bin.tar.gz && rm -f apache-zookeeper-3.6.2-bin.tar.gz
+WORKDIR /opt/module/apache-zookeeper-3.6.2-bin/
+RUN cp conf/zoo_sample.cfg conf/zoo.cfg
+EXPOSE 2181
+CMD ["bash"]

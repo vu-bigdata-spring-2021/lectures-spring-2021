@@ -1,0 +1,1 @@
+export SPARK_DAEMON_JAVA_OPTS="-Dspark.deploy.recoveryMode=ZOOKEEPER -Dspark.deploy.zookeeper.url=zookeeper -Dspark.deploy.zookeeper.dir=/spark"

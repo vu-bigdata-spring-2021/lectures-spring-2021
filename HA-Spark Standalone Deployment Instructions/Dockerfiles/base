@@ -1,0 +1,14 @@
+# create a base image first
+FROM ubuntu:18.04
+# install dependencies
+RUN apt-get update && apt-get install -y openjdk-8-jdk-headless ssh wget curl nano
+RUN mkdir -p /opt/module
+RUN service ssh start
+# generate ssh key and skip prompts
+RUN ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+RUN systemctl enable ssh
+# mark public key as an authorized one, so that we can ssh between containers using homename
+RUN cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+WORKDIR /opt/module/
+ENTRYPOINT service ssh restart && bash
