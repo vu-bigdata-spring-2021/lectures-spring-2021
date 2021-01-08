@@ -1,6 +1,9 @@
 # Spark + Yarn Word Count Example 
 
-In this repository, we'll implement a simple word count example and deploy the Spark Streaming task in cluster mode on AWS EMR (1 master node and 2 core nodes). Spark and Hadoop Yarn are pre-installed using AWS EMR Console. Moreover, we'll employ AWS S3 to store data and implement the remote deployment of the Spark driver program.
+In this repository, we'll implement a simple word count example and deploy the Spark Streaming task in cluster mode on AWS EMR (1 master node and 2 core nodes). Spark and Hadoop Yarn are pre-installed using AWS EMR Console. Moreover, we'll employ AWS S3 to store data and implement the remote deployment of the Spark driver program. 
+
+- Video: https://www.youtube.com/watch?v=w4HNnKuAgcA
+- Full code: [emr_spark_wordcount_example.ipynb](emr_spark_wordcount_example.ipynb)
 
 The overall deployment architecture is like below:
 
