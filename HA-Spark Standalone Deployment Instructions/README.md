@@ -1,6 +1,6 @@
 # Kakfa + Spark Streaming + Docker WorkCount Example
 
-## [Instruction Video](https://www.youtube.com/watch?v=mnaiNz7PzZ4)
+## [Instruction Video](https://www.youtube.com/watch?v=mJ-qRVwrMSw)
 
 ## Environment
 - [EC2](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#InstanceTypeDetails:instanceType=t2.medium): 
