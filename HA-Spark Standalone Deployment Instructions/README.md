@@ -29,7 +29,18 @@ sudo reboot
 ./buildImages.sh <your docker hub id>
 ```
 
-## Step 3. Install Containers in EC2 and Set up the cluster
+## Step 3. Configure Kafka advertised IP address in the configuration file
+```
+sed -i 's/<PUBLIC_IP>/replace here with your ec2 instance public IP/g' kafka-conf/server.properties
+
+# for example
+# sed -i 's/<PUBLIC_IP>/3.238.250.114/g' kafka-conf/server.properties
+```
+
+## Step 4. Prepare volumes that containers will mount
+Copy the kafka-conf and spark-conf folder into your ec2 instance.
+
+## Step 5. Install Containers in EC2 and Set up the cluster
 ```sh
 ./setup.sh <your docker hub id>
 ```
