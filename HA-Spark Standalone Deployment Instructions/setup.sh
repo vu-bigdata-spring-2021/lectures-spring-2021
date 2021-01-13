@@ -35,4 +35,4 @@ docker exec master1 sbin/start-all.sh
 docker exec master2 sbin/start-master.sh
 
 # create topic in kafka container
-#docker exec kafka bin/kafka-topics.sh --bootstrap-server PLAINTEXT://$(docker exec kafka hostname -I):9092 --create --topic wordcount
+#docker exec kafka bin/kafka-topics.sh --bootstrap-server 'PLAINTEXT://$(docker exec kafka hostname -I):9092' --create --topic wordcount
